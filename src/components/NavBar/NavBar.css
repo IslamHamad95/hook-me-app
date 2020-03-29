@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    margin: auto;
+    width: 80%;
+   
+}
+
+header h1{
+    width: fit-content;
+    padding: 2% 0%;
+    color:#FFFFFF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+ 
+    background-color: inherit;
+    width: 100%;
+ 
+    
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    font-size: small;
+    margin-left: auto;
+    padding: 2.5% 0%;
+    width: 50%;
+
+   
+}
+.nav-links li{
+    margin-left:4%;
+    margin-left: auto;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+ 
+
+}
+
+
+@media screen and (max-width:1024px){
+    header h1{
+        font-size: large;
+    }
+    .line{
+        width:30px;
+        height:3px;
+        background-color: white;
+        margin:5px;
+    }
+    nav{
+        position: relative;
+
+    }
+    .hamburger{
+        position: absolute;
+        right:5%;
+        top:25%;
+        z-index: 2;
+    }
+    .nav-links{
+       
+        position: fixed;
+        background-color: inherit;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path:circle(100px at 90% -20%);
+        -webkit-clip-path:circle(10px at 90% -20%);
+        text-align: center;
+        transition: all 1s ease-in-out
+    }
+
+    .nav-links.open{
+        clip-path:circle(1200px at 90% -20%);
+        -webkit-clip-path:circle(1200px at 90% -20%);
+    }
+}

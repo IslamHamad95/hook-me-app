@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+a{
+  text-decoration: none;
+}
+a :hover{
+  cursor: pointer;
+}
+
+.container{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+
+
+}
+
+.container h1{
+    width: 50%;
+   
+    position: relative;
+    padding-top: 15%;
+    color: white;
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
+    
+}
+
+.container img{
+    width: 25%;
+    position: absolute;
+    left: 65%;
+    opacity: 0.3;
+    top: 10%;
+   animation: fadeIn;
+   animation-duration: 0.5s;
+    
+}
+
+.buttons{
+   margin-top: 5%;
+   animation-name: fadeInLeft;
+   animation-duration: 1.5s;
+}
+
+button{
+    font-size: 1rem;
+    border: none;
+    font-weight: 700;
+    color: #006142;
+    padding: 1.5% 4%;
+    border-radius:15px;
+}
+
+#learn-more{
+    margin-left: 10%;
+}
+
+
+
+/*********************************/
+/*MEDIA QUIRES*/
+/*********************************/
+
+
+
+ @media screen and (max-width:1024px){
+     *{
+         animation: none !important;
+     }
+     .container{
+         width:80%;
+         margin-left: auto;
+         margin-top: 20%;
+       
+     }
+     .container img{
+         display: none;
+     }
+
+     .container h1{
+        text-align: center;
+        width: 100%;
+       
+     }
+     .buttons{
+        margin-top:30%;
+        margin-left: auto;
+        width: 95%
+      
+     }
+     button{
+         width: 100%;
+         font-size: x-large;
+     }
+     #learn-more{
+         margin-top: 10%;
+         margin-left:0%;
+     }
+ }
+
+
+/*********************************/
+/*ANIMATIONS*/
+/*********************************/
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.3;
+    }
+  }
+  
+/*********************************/
+/*ANIMATIONS*/
+/*********************************/
+  
+
+
