@@ -1,3 +1,24 @@
+.slider{
+    padding: 2% 1%;
+    position: fixed;
+    width: 300px;
+    height: 800px;
+    overflow: scroll;
+    right: 0%;
+    
+    background-color:#EEF1F0;
+    animation-name: slideInRight;
+    animation-duration: 0.1s;
+  
+}
+
+#check-out-btn{
+    width:50%;
+    background-color: #006142;
+    color: #EEF1F0;
+    margin: 4% 24%;
+}
+
 
 .items-page-container{
     width: 100%;
@@ -21,7 +42,13 @@
 
 }
 
-
+#cart-icon{
+    position: fixed;
+    font-size: 4vw;
+    top:90%;
+    left: 92%;
+    color: #006142;
+}
 
 #item-name{
     float: left;
@@ -57,3 +84,16 @@
     
 
 }
+
+  
+@keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
