@@ -1,15 +1,31 @@
 .slider{
-    padding: 2% 1%;
+    padding: 2% 1% 0% 1% ;
     position: fixed;
     width: 300px;
-    height: 800px;
+    height: 540px;
     overflow: scroll;
     right: 0%;
-    
+
     background-color:#EEF1F0;
-    animation-name: slideInRight;
+    animation-name: slideInUp;
     animation-duration: 0.1s;
   
+}
+
+  
+.cart-item{
+    display: grid;
+    grid-template-columns: 10% 83% 5% ;
+}
+#remove-from-cart-btn{
+    color: white;
+    width: 70%;
+    height: fit-content;
+    background-color: darkred;
+    border-radius: 0;
+}
+#remove-from-cart-btn :hover{
+    cursor: pointer;
 }
 
 #check-out-btn{
@@ -85,10 +101,12 @@
 
 }
 
-  
-@keyframes slideInRight {
+/*********************************/
+/*Animation*/
+/*********************************/ 
+@keyframes slideInUp {
     from {
-      transform: translate3d(100%, 0, 0);
+      transform: translate3d(0, 100%, 0);
       visibility: visible;
     }
   
@@ -96,4 +114,5 @@
       transform: translate3d(0, 0, 0);
     }
   }
+  
   

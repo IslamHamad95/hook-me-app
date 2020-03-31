@@ -1,0 +1,30 @@
+.submit{
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    column-gap: 10%;
+}
+
+form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    
+}
+
+input{
+    width: 100%;
+    height: 4vh;
+    margin-bottom: 2%;
+}
+
+.cart-items-to-submit{
+    background-color: white;
+    color: #006142;
+    font-weight: 600;
+    padding: 3%;
+    height: fit-content;
+}
