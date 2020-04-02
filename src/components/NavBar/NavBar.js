@@ -14,9 +14,9 @@ function NavBar(){
                  </div>
 
                  <ul className="nav-links">
-                     <li><a href="#">HOME</a></li>
-                     <li><a href="#">CONTACT US</a></li>
-                     <li><a href="#">SIGN UP/SIGN IN</a></li>
+                     <li><a href="/">HOME</a></li>
+                     <li><a href="https://ihdev.netlify.com/#Contact">CONTACT US</a></li>
+                     <li>SIGN UP/SIGN IN</li>
 
                 </ul>
             </nav>

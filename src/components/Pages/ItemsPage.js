@@ -43,7 +43,7 @@ const ItemsPage=()=>{
                   {
                       clothes.map(shirt=>(
                           <div className="item" key={shirt.id}>
-                          <img src={require(`../contexts/clothes-photos/${shirt.image}.jpg`)}></img>
+                          <img src={require(`../contexts/clothes-photos/${shirt.image}.jpg`)} alt={shirt.name}></img>
                           <h4 id="item-name">{shirt.name}</h4>
                           <p id="item-price">{shirt.price}$</p>
                           <button onClick={(e)=>addToCart(shirt.name,shirt.price, shirt.id)} id="add-to-cart-btn">ADD TO CART</button>

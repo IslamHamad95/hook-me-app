@@ -5,7 +5,7 @@ export const ClothesContext= createContext();
 
 const ClothesContextProvider=(props)=>{
 
-    const [clothes, setclothes] = useState([
+    const [clothes] = useState([
         {name:"Oxford Shirt ", id:1, price:50, desc:"All sizes Avalabile" ,image:"oxford-shirt"},
         {name:"Cotton Shirt", id:2, price:70, desc:"All sizes Avalabile",image:"cotton-shirt"},
         {name:"Patterned Shirt", id:3, price:30, desc:"All sizes Avalabile",image:"patterned-shirt"},
