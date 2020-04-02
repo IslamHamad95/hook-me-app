@@ -10,7 +10,7 @@ function LandingPage(){
 
                 <div className="buttons">
                     <a href="/itemspage"><button id="shop-now">SHOP NOW</button></a>
-                     <button id="learn-more">LEARN MORE</button>
+                     <a href="https://github.com/IslamHamad95/shopping-website"><button id="learn-more">LEARN MORE</button></a>
                 </div>
               </div>         
         

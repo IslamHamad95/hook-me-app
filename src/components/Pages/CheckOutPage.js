@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import './PagesStyles/CheckOutPage.css'
-
-
+import uuid from "react-uuid"
 
 const CheckOutPage=()=>{
     let localData=localStorage.getItem('Cart');
@@ -42,7 +41,7 @@ const CheckOutPage=()=>{
 
            <div className="cart-items-to-submit">
                  {items.map (item=>(
-                     <div style={{display:"flex-box", width:"100%"}} key={item.id} >
+                     <div style={{display:"flex-box", width:"100%"}} key={uuid()} >
                         <p style={{float:"left"}}>{item.name}</p>
                         <p style={{float:"right"}}>{item.price}$</p>
                         <br/>
