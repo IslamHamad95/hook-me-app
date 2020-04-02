@@ -1,11 +1,12 @@
 import React,{createContext,useState} from 'react';
 
+
 export const CartContext= createContext();
 
 
 const CartContextProvider=(props)=>{
     const [Cart, setCart] = useState([])
-  
+ 
     
     const addToCart=(name,price,id)=>{
         setCart([...Cart, {name, price,id}]);

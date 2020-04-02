@@ -6,19 +6,29 @@
     display: grid;
     grid-template-columns: 50% 40%;
     column-gap: 10%;
+    height: 500px;
+
 }
 
-form{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    
-}
 
-input{
+
+.submit-form input{
     width: 100%;
     height: 4vh;
     margin-bottom: 2%;
+}
+
+#credit-card-number, #exp-date{
+    width: 60%;
+    margin: auto;
+    padding-left: 2%;
+    font-size: 1vw;
+    margin-left: 2%;
+}
+
+#comments{
+    height: 20vh;
+    width: 100%;
 }
 
 .cart-items-to-submit{
@@ -27,4 +37,14 @@ input{
     font-weight: 600;
     padding: 3%;
     height: fit-content;
+}
+
+.payment-method label, .card-info label{
+    margin-left: 2%;
+}
+
+#place-your-order-btn{
+    padding:1% 0%;
+    width:15%;
+    margin-left: 45%;
 }

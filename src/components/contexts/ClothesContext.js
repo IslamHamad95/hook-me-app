@@ -17,7 +17,7 @@ const ClothesContextProvider=(props)=>{
         {name:"Oxford Shirt 3", id:9, price:50, desc:"All sizes Avalabile" ,image:"oxford-shirt"},
         {name:"Cotton Shirt 3", id:10, price:70, desc:"All sizes Avalabile",image:"cotton-shirt"},
         {name:"Patterned Shirt 3", id:11, price:30, desc:"All sizes Avalabile",image:"patterned-shirt"},
-        {name:"Denim Shirt 3", id:12, price:40, desc:"All sizes Avalabile",image:"denim-shirt"},   
+        {name:"Denim Shirt 3", id:12, price:40, desc:"All sizes Avalabile",image:"denim-shirt"}
     ])
 
     return(
