@@ -6,6 +6,7 @@ import ClothesContextProvider from './components/contexts/ClothesContext.js';
 import ItemsPage from './components/Pages/ItemsPage.js';
 import CartContextProvider from './components/contexts/CartContext.js';
 import CheckOutPage from './components/Pages/CheckOutPage.js';
+import SuccessPage from './components/Pages/SuccessPage.js';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Router>
       <LandingPage path="/"/>
       <ItemsPage path="/itemspage"/>
-      <CheckOutPage path="check-out"/>
+      <CheckOutPage path="/check-out"/>
+      <SuccessPage path="/order-placed"/>
       </Router>
       </ClothesContextProvider>
       </CartContextProvider>

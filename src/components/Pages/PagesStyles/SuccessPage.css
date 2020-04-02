@@ -1,0 +1,17 @@
+.success-post{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.thank-you{
+    margin-top: 5%;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.thank-you img{
+    width:15%
+}

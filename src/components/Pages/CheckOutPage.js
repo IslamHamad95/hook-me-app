@@ -73,7 +73,7 @@ const CheckOutPage=()=>{
            </div>
        </div>
        
-       <button type="Submit" id="place-your-order-btn" >Place your order</button>
+       <a href="/order-placed"><button id="place-your-order-btn" >Place your order</button></a>
        </div>
       
     )
