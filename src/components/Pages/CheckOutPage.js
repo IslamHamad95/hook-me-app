@@ -26,17 +26,18 @@ const CheckOutPage=()=>{
     return(
         <div>
        <div className="submit">
-           <form className="submit-form">
+           <form className="submit-form" target="_blank" action="./order-placed" >
                <label>Full Name:</label>
-               <input id="full-name" name="name" onChange={updateFormInfo} value={FormInfo.name}></input>
+               <input id="full-name" name="name" onChange={updateFormInfo} value={FormInfo.name} required></input>
                <label>Email:</label>
-               <input id="email" name="email" onChange={updateFormInfo} value={FormInfo.email} ></input>
+               <input id="email" name="email" type="email" onChange={updateFormInfo} value={FormInfo.email} required></input>
                <label>Phone Number:</label>
-               <input id="phone" name="phone" onChange={updateFormInfo} value={FormInfo.phone} ></input>
+               <input id="phone" name="phone" onChange={updateFormInfo} value={FormInfo.phone} required ></input>
                <label>Full Address:</label>
-               <input id="address" name="address"onChange={updateFormInfo} value={FormInfo.address}></input>
+               <input id="address" name="address"onChange={updateFormInfo} value={FormInfo.address} required></input>
                <label>Comments:</label>
-               <textarea id="comments" name="comments" onChange={updateFormInfo} value={FormInfo.comments}></textarea>
+               <textarea id="comments" name="comments" onChange={updateFormInfo} value={FormInfo.comments} ></textarea>
+               <input type="submit" id="place-your-order-btn" value="Place your Order"/>
            </form>
 
            <div className="cart-items-to-submit">
@@ -72,7 +73,6 @@ const CheckOutPage=()=>{
            </div>
        </div>
        
-       <a href="/order-placed"><button id="place-your-order-btn" >Place your order</button></a>
        </div>
       
     )
