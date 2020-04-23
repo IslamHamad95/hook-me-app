@@ -17,6 +17,19 @@
     height: 4vh;
     margin-bottom: 2%;
 }
+.submit-form #place-your-order-btn{
+    padding: 2%;
+    margin-top: 2%;
+    width:40%;
+    height: fit-content;
+    margin-left: 25%;
+    color: #006142;
+    font-weight: 700;
+    font-size: 1.5vw;
+    background-color: white;
+    border: hidden;
+    border-radius: 12px;
+}
 
 #credit-card-number, #exp-date{
     width: 60%;
@@ -43,8 +56,3 @@
     margin-left: 2%;
 }
 
-#place-your-order-btn{
-    padding:1% 0%;
-    width:15%;
-    margin-left: 45%;
-}
