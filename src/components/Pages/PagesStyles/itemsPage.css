@@ -1,3 +1,21 @@
+.search-bar{
+
+    width: 18%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+  
+}
+#search-box{
+    padding: 1%;
+}
+#search-button{
+    background-color: #006142;
+    color: white;
+    padding: 2% 4%;
+    font-weight: 500;
+    margin-left: 3%;
+}
+
 .slider{
     padding: 2% 1% 0% 1% ;
     position: fixed;
@@ -40,7 +58,7 @@
     width: 100%;
     background-color: #ffffff;
     height: fit-content;
-    padding:6.5% 0% ;
+    padding:3% 0% ;
 }
 
 .items-page-container img{

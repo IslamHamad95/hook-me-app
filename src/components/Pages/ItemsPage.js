@@ -11,19 +11,37 @@ const ItemsPage=()=>{
     const {clothes}= useContext(ClothesContext)
     const {Cart,addToCart,removeFromCart} = useContext(CartContext)
     const [DisplayColumn, setDisplayColumn] = useState(false)
+    const [SearchedItem, setSearchedItem]=useState("")
+    const [SearchResult,setSearchResult]=useState([])
 
 
     const toggled=()=>{
         setDisplayColumn(!DisplayColumn);
     }
 
+    const onSubmitItem=e=>{
+        
+        const resultArr=[];
+        e.preventDefault();
+        let word=new RegExp(SearchedItem,"i");
+        if(SearchedItem==="") return;
+        for (let i=0; i<clothes.length; i++){
+            if(clothes[i].name.match(word))
+           resultArr.push(clothes[i].name)
+        }
+        setSearchResult([...SearchResult,...resultArr])
+    }
+
     useEffect(()=>{
         localStorage.setItem('Cart',JSON.stringify(Cart))
     },[Cart])
 
+
+
    
     return(
         <div>
+  
             <div style={{display: (DisplayColumn&& Cart.length)? "block":"none"}} className="slider">
             {
                       Cart.map(shirt=>(
@@ -39,6 +57,12 @@ const ItemsPage=()=>{
             </div>
             
           <div className="items-page-container">
+
+          <form className="search-bar">
+                <input id="search-box" placeholder="Item Name" onChange={e=>setSearchedItem(e.target.value)}></input>
+                <input type="submit" id="search-button" value="Search Item" onClick={e=>onSubmitItem(e)}></input>
+            </form>
+              
               <div className="items">
                   {
                       clothes.map(shirt=>(
