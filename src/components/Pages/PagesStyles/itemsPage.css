@@ -58,7 +58,7 @@
     width: 100%;
     background-color: #ffffff;
     height: fit-content;
-    padding:3% 0% ;
+    padding:3% 0% 6.5% 0% ;
 }
 
 .items-page-container img{
@@ -103,6 +103,21 @@
 #add-to-cart-btn, #item-name, #item-price{
     font-size: 1.5vw;
    text-align: center;
+}
+
+.item-not-found{
+    width: 50%;
+    margin:2% 25%; 
+}
+
+.item-not-found h2{
+    text-align: center;
+    color: #006142;
+}
+
+.item-not-found img{
+    width:50%;
+    margin: 4% 25%;
 }
 
 

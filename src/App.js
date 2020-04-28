@@ -7,6 +7,7 @@ import ItemsPage from './components/Pages/ItemsPage.js';
 import CartContextProvider from './components/contexts/CartContext.js';
 import CheckOutPage from './components/Pages/CheckOutPage.js';
 import SuccessPage from './components/Pages/SuccessPage.js';
+import SearchedItems from './components/Pages/SearchedItems.js';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <ItemsPage path="/itemspage"/>
       <CheckOutPage path="/check-out"/>
       <SuccessPage path="/order-placed"/>
+      <SearchedItems path={'/searcheditems'}/>
       </Router>
       </ClothesContextProvider>
       </CartContextProvider>

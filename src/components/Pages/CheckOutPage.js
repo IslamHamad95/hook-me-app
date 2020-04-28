@@ -26,7 +26,7 @@ const CheckOutPage=()=>{
     return(
         <div>
        <div className="submit">
-           <form className="submit-form" target="_blank" action="./order-placed" >
+           <form className="submit-form" action="./order-placed" >
                <label>Full Name:</label>
                <input id="full-name" name="name" onChange={updateFormInfo} value={FormInfo.name} required></input>
                <label>Email:</label>
