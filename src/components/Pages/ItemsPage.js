@@ -66,7 +66,7 @@ const ItemsPage=()=>{
             
           <div className="items-page-container">
 
-          <form className="search-bar" action="./searcheditems">
+          <form className="search-bar">
                 <input id="search-box" placeholder="Item Name" onChange={e=>setSearchedItem(e.target.value)}></input>
                 <input type="submit" id="search-button" value="Search Item" onClick={e=>onSubmitItem(e)}></input>
             </form>
